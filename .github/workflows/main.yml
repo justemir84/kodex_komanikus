@@ -26,8 +26,8 @@ jobs:
         with:
           version: 9
 
-      - name: Install Dependencies
-        run: pnpm install
+      - name: Verify pnpm installation
+        run: pnpm --version
 
       - name: Setup Java
         uses: actions/setup-java@v4
